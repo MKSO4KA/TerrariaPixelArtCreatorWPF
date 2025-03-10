@@ -107,5 +107,5 @@ TerrariaPixelArtCreatorWPF/
 
 ## 📬 Контакты
 Автор: **[MKSO4KA](https://github.com/MKSO4KA)**  
-Почта: **[mixailka.git@dev.com](mixailkaforpda@gmail.com)**  
+Почта: **mixailkaforpda@gmail.com**  
 Issues: [Сообщить о проблеме](https://github.com/MKSO4KA/TerrariaPixelArtCreatorWPF/issues)
