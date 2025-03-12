@@ -907,7 +907,7 @@ namespace WpfApp1
         }
         #endregion
         /// <summary>
-        /// This code is the intellectual property of MKSO4KA (Mixailkin) and is protected by copyright law.
+        /// This class code is the intellectual property of MKSO4KA (Mixailkin) and is protected by copyright law.
         /// Unauthorized copying, modification, or distribution of this code without explicit permission from the author is strictly prohibited.
         /// 
         /// License: GNU General Public License v3.0
