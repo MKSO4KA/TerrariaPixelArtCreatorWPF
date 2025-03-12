@@ -9,7 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows;
 
-namespace WpfApp1
+namespace PixArtConverter
 {
     public class MessageViewModel : INotifyPropertyChanged
     {
@@ -20,6 +20,7 @@ namespace WpfApp1
         private Geometry _icon;
         private Brush _iconColor;
 
+        
         // Свойства
         public string Title
         {
