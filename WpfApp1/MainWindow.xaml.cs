@@ -138,7 +138,7 @@ namespace PixArtConverter
                 {
                     UserTiles = true;
                 }
-                else
+                else if (!string.IsNullOrEmpty(value))
                 {
                     MessageService.ShowWarning("UserTiles is unaccesible", "Validation Error");
                 }

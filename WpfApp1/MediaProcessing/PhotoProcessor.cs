@@ -72,10 +72,7 @@ namespace PixArtConverter.MediaProcessing
                         int index = item.index;
                         using Image<Rgb24> frame = item.frame;
                         string filePath = Path.Combine(TotalPath, $"photo{index}.txt");
-                        if (!FileDirectoryTools.IsFileAccessible(filePath))
-                        {
-                            throw new FileNotFoundException("Файл не доступен или не существует: " + filePath);
-                        }
+                        
                         if (File.Exists(filePath) || inds.ContainsKey(index))
                         {
                             while (true)
