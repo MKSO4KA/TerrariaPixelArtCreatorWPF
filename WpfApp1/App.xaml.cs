@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace WpfApp1
+namespace PixArtConverter
 {
     /// <summary>
     /// Interaction logic for App.xaml

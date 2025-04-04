@@ -1,6 +1,6 @@
-﻿<Window x:Class="WpfApp1.MainWindow"
+﻿<Window x:Class="PixArtConverter.MainWindow"
         x:Name="mainWindow"
-        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:local="clr-namespace:PixArtConverter"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Media Processing Suite"

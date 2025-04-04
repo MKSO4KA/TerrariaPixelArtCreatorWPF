@@ -15,8 +15,9 @@ using System.Drawing;
 using Emgu.CV;
 using Emgu.CV.CvEnum;
 using System.Windows.Media;
-using WpfApp1.MainScript;
-namespace WpfApp1
+using PixArtConverter.MediaProcessing;
+using PixArtConverter.DataTools;
+namespace PixArtConverter
 {
     public class WidthConverter : IValueConverter
     {
@@ -133,9 +134,13 @@ namespace WpfApp1
             }
             set
             {
-                if (File.Exists(value))
+                if (FileDirectoryTools.IsFileAccessible(value))
                 {
                     UserTiles = true;
+                }
+                else if (!string.IsNullOrEmpty(value))
+                {
+                    MessageService.ShowWarning("UserTiles is unaccesible", "Validation Error");
                 }
                 _userTilesPath = value;
             }
@@ -354,8 +359,9 @@ namespace WpfApp1
             // Заглушка для реальной логики
             var processor = new PhotoProcessor(
                 ImagePath,
-                OutputPath
-                
+                OutputPath,
+                (UserTiles == true) ? UserTilesPath : ""
+
             );
             await processor.ProcessFramesAsync();
         }
@@ -367,7 +373,8 @@ namespace WpfApp1
                 VideoPath,
                 OutputPath,
                 TargetFrameRate,
-                MaxDegreeOfParallelism
+                MaxDegreeOfParallelism,
+                (UserTiles == true ) ? UserTilesPath : ""
             );
             await processor.ProcessFramesAsync();
         }
